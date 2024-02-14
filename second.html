@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>С Днем Святого Валентина!</title>
+    <style>
+        body {
+            background-color: #f8e7e7;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: #e60000;
+            margin-top: 100px;
+        }
+        
+        p {
+            color: #333333;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        
+        img {
+            width: 300px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        
+        .heart {
+            color: #e60000;
+            font-size: 50px;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>С Днем Святого Валентина!</h1>
+    <div class="card">
+        <p>Пусть любовь и радость наполняют твою жизнь каждый день.</p>
+        <button onclick="showHeart()">Сердешко</button>
+        <div id="heart" style="display: none;">
+            <div class="w"></div>
+        </div>
+      </div>
+    <p><span id="name">Даша</span> спасибо, что ты есть!</p>
+
+    <p>С любовью 🤍</p>
+    
+    
+    <script>
+    function showHeart() {
+        var heartDiv = document.getElementById("heart");
+        if (heartDiv.style.display === "none"){
+            heartDiv.style.display = "block";
+        }
+        else
+        {
+            heartDiv.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
